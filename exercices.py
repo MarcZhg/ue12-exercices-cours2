@@ -238,14 +238,7 @@ print(swap_first_rows(np.array([[1, 2], [3, 4], [5, 6]])))  # attendu: [[3 4]
 
 # %%
 def funny_checkerboard(size):
-    checkerboard = np.zeros((size, size))
-        for i in range(size):
-        for j in range(size):
-            if (i % 2 == 0) and (j % 2 == 0):
-                checkerboard[i, j] = i + 1
-            elif (i % 2 == 1) and (j % 2 == 1):
-                checkerboard[i, j] = 1 
-    return checkerboard
+    pass
 
 
 print(funny_checkerboard(5))  # attendu: [[1. 0. 1. 0. 1.]
@@ -266,8 +259,8 @@ print(funny_checkerboard(5))  # attendu: [[1. 0. 1. 0. 1.]
 
 # %%
 def mean(arr):
-    somme = arr.sum
-    return somme/len(arr)
+    somme = np.sum(arr)
+    return somme / arr.size
 
 
 # %% [markdown]
